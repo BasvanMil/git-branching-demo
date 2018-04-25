@@ -11,4 +11,11 @@ app.get('/api/helloworld', function (req, res) {
   }).end()
 });
  
-app.listen(3000);
+
+app.get('/api/goodbye', function (req, res) {
+  res.status(200).json({
+  message:'goodbye my lover'
+  }).end()
+});
+
+app.listen(3000); 

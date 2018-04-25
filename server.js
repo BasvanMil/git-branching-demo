@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+const port = 3000;
  
 app.get('/', function (req, res) {
   res.send('HALLO ALLEMAAL, WAT FIJN DAT JE ER BENT. KARNAVAL TWEEDUIZENDACHTIEN MODDERFOKKER!')
@@ -18,4 +19,6 @@ app.get('/api/goodbye', function (req, res) {
   }).end()
 });
 
-app.listen(3000); 
+app.listen(port, function(req, res){
+  console.log("De server luistert aandachtig naar port "+port);
+}); 

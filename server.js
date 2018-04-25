@@ -20,5 +20,5 @@ app.get('/api/goodbye', function (req, res) {
 });
 
 app.listen(port, function(req, res){
-  console.log("De server luistert aandachtig naar port "+port);
+  console.log("De server luistert aandachtig naar poort "+port);
 }); 
